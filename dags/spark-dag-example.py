@@ -18,10 +18,11 @@ spark_dag = DAG(
 )
 
 Extract = SparkSubmitOperator(
-    application="/spark-scripts/spark-example.py",
+    application="/spark-scripts/spark-assignment_23.py",
     conn_id="spark_main",
     task_id="spark_submit_task",
     dag=spark_dag,
+    packages="org.postgresql:postgresql:42.2.18",
 )
 
 Extract

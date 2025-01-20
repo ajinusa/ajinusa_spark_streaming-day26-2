@@ -45,7 +45,6 @@ services:
    - ../dags:/opt/airflow/dags
    - ../logs:/opt/airflow/logs
    - ../spark-scripts:/spark-scripts
-   - ../spark-scripts/postgresql-42.3.1.jar:/spark-scripts/postgresql-42.3.1.jar
    - ../scripts:/scripts
   ports:
    - ${AIRFLOW_WEBSERVER_PORT}:8080
