@@ -1,1 +1,1 @@
-SELECT * FROM employee_table;
+SELECT * FROM apotek_dibimbing_ajinusa_ksql;

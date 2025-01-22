@@ -1,12 +1,13 @@
-CREATE TABLE employee_table AS
-SELECT emp_id,
-       LATEST_BY_OFFSET(employee_name) AS employee_name,
-       LATEST_BY_OFFSET(department) AS department,
-       LATEST_BY_OFFSET(state) AS state,
-       LATEST_BY_OFFSET(salary) AS salary,
-       LATEST_BY_OFFSET(age) AS age,
-       LATEST_BY_OFFSET(bonus) AS bonus,
-       LATEST_BY_OFFSET(ts) AS ts,
-       LATEST_BY_OFFSET(new) AS new
-FROM employee_stream
-GROUP BY emp_id;
+
+CREATE TABLE apotek_dibimbing_ajinusa_ksql AS
+SELECT transaction_id,
+       LATEST_BY_OFFSET(buyer_name) AS buyer_name,
+       LATEST_BY_OFFSET(medication_name) AS medication_name,
+       LATEST_BY_OFFSET(quantity) AS quantity,
+       LATEST_BY_OFFSET(unit_price) AS unit_price,
+       LATEST_BY_OFFSET(total_price) AS total_price,
+       LATEST_BY_OFFSET(payment_method) AS payment_method,
+       LATEST_BY_OFFSET(transaction_date) AS transaction_date,
+       LATEST_BY_OFFSET(transaction_time) AS transaction_time
+FROM apotek_dibimbing_ajinusa_stream
+GROUP BY transaction_id;

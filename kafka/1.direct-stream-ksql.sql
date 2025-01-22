@@ -1,1 +1,1 @@
-SELECT * FROM employee_stream EMIT CHANGES;
+SELECT * FROM apotek_dibimbing_ajinusa_stream EMIT CHANGES;
