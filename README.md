@@ -1,5 +1,5 @@
 # Arifin Satria Ajinusa (Day24 - Kafka)
-Dalam tugas ini disimulasikan embuat 1 producer, 3 consumer. Dengan melakukan 5 partisi, 1 replikasi, 1 jam retensi data, dan max 1 GB penyimpanan data di dalam cluster Kafka.
+Dalam tugas ini disimulasikan membuat 1 producer, 3 consumer. Dengan melakukan 5 partisi, 1 replikasi, 1 jam retensi data, dan max 1 GB penyimpanan data di dalam cluster Kafka.
 Selain itu juga disimulasikan menggunakan fitur KSQL DB untuk mengambil message dari cluster Kafka.
 Untuk detail penjelasan hasil tugas ada di dalam file "Dokumentasi - Assignment Day 24 - Kafka (Ajinusa)"
 
